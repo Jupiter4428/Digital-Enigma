@@ -355,50 +355,6 @@ char_out = (sub − pos + 26) mod 26   ← ลบ offset กลับ
 
 ---
 
-## วิธีใช้งานใน Logisim
-
-```
-1. RST → 0          (CLR=1 → reset counter → pos=0,0,0)
-2. RST → 1          (CLR=0 → พร้อมนับ)
-3. ใส่ char_in      (0–25 แบบ binary 6-bit บน Pin)
-4. KEYPRESS → 1     (ค้างไว้)
-5. CLK → 0 → 1     (rising edge → rotor steps → cipher คำนวณ)
-6. KEYPRESS → 0
-7. อ่าน char_out    (0–25 binary/hex บน Probe หรือ Register Q)
-
-⚠️  ต้องกด RST=1 ก่อนกด KEYPRESS เสมอ
-    ถ้า RST=0 อยู่ → counter ล็อก → pos=0,0,0 ตลอด → ค่าผิด
-```
-
----
-
-## โครงสร้างไฟล์
-
-```
-WIRING_GUIDE.md          — วิธีสร้างและทดสอบวงจรทีละวงจร (Bottom-Up)
-H_encoding_example.md    — trace H encoding ทีละ stage ทีละตัวแปร
-circuit_logic_guide.md   — หน้าที่ logic component ทุกวงจร พร้อมตัวอย่าง
-logisim_test_guide.md    — (deprecated, รวมอยู่ใน WIRING_GUIDE แล้ว)
-
-source_code/
-  enigma.v               — Verilog RTL implementation
-  enigma_tb.v            — Testbench
-  circuits/
-    *.c / *.h            — C reference implementation
-    test_cipher_path.c   — Unit tests
-
-*.circ                   — Logisim-evolution circuit files
-  mod26_add.circ
-  mod26_sub.circ
-  Plugboard.circ
-  Reflector.circ
-  complete_fw.circ       — rotor_fw
-  complete_bw.circ       — rotor_bw
-  stepping.circ
-  cipher_path.circ
-  display_decoder.circ
-  main.circ              — enigma_top
-```
 <table align="center" style="width: 100%; border-collapse: collapse;">
 <tr style="background-color: #f8fafc;">
 <th align="center" style="padding: 10px;">บทบาท (Role)</th>
