@@ -399,16 +399,6 @@ source_code/
   display_decoder.circ
   main.circ              — enigma_top
 ```
-
-## สมาชิก
-```
-นายกฤตยชญ์ แก้วกำมา
-นายวุฒิศักดิ์ บุญกัน
-นายภูวรัตน์ นาคจันทึก
-นายธนกฤต โพธิมาศ
-นายสายฟ้า เดชะ
-```
-
 <table align="center" style="width: 100%; border-collapse: collapse;">
 <tr style="background-color: #f8fafc;">
 <th align="center" style="padding: 10px;">บทบาท (Role)</th>
@@ -416,27 +406,27 @@ source_code/
 <th align="center" style="padding: 10px;">รหัสนักศึกษา</th>
 </tr>
 <tr>
-<td align="center"><b>Database & Circuit Architect</b></td>
+<td align="center"><b>Circuit Architect & Verification</b></td>
 <td align="center">นายกฤตยชญ์ แก้วกำมา</td>
 <td align="center">6710535011</td>
 </tr>
 <tr>
-<td align="center"><b>Technical Lead & Circuit Architect</b></td>
+<td align="center"><b>Technical Lead & Algorithm Design & Testing</b></td>
 <td align="center">นายวุฒิศักดิ์ บุญกัน</td>
 <td align="center">6710535029</td>
 </tr>
 <tr>
-<td align="center"><b>Database & Backend Architec</b></td>
+<td align="center"><b>Circuit Architect & Verification</b></td>
 <td align="center">นายภูวรัตน์ นาคจันทึก</td>
 <td align="center">6710615201</td>
 </tr>
 <tr>
-<td align="center"><b>Frontend & UI/UX Design</b></td>
+<td align="center"><b>Circuit Architect & Verification</b></td>
 <td align="center">นายธนกฤต โพธิมาศ</td>
 <td align="center">6710625010</td>
 </tr>
    <tr>
-<td align="center"><b>Frontend & UI/UX Design</b></td>
+<td align="center"><b>Circuit Architect & Verification</b></td>
 <td align="center">นายสายฟ้า เดชะ</td>
 <td align="center"> </td>
 </tr>
