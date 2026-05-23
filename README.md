@@ -384,7 +384,7 @@ char_out = (sub − pos + 26) mod 26   ← ลบ offset กลับ
    <tr>
 <td align="center"><b>Circuit Architect & Verification</b></td>
 <td align="center">นายสายฟ้า เดชะ</td>
-<td align="center"> </td>
+<td align="center">6710615276</td>
 </tr>
 </table>
 
