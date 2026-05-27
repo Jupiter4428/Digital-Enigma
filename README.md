@@ -337,7 +337,7 @@ char_out = (sub − pos + 26) mod 26   ← ลบ offset กลับ
 
 ---
 
-## ตัวอย่าง: เข้ารหัส HELLO
+## ตัวอย่าง: เข้ารหัส HELL
 
 การตั้งค่า: pos = AAA (0,0,0), Plugboard: AV BS CG DL FU HZ IN KM OW RX
 
@@ -347,11 +347,10 @@ char_out = (sub − pos + 26) mod 26   ← ลบ offset กลับ
 | 2 | e (4)  | 2 | 0 | 0 | d (3)  | E pass-through, L↔D ขากลับ |
 | 3 | l (11) | 3 | 0 | 0 | j (9)  | L↔D ขาไป, J pass-through ขากลับ |
 | 4 | l (11) | 4 | 0 | 0 | d (3)  | L↔D ทั้งสองทิศ |
-| 5 | o (14) | 5 | 0 | 0 | q (16) | O↔W ขาไป, Q pass-through ขากลับ |
 
-**HELLO → fdjdq**
+**HELL → fdjd**
 
-**Decode:** ป้อน `fdjdq` (reset pos ก่อน) → ได้ `hello` กลับ ✓
+**Decode:** ป้อน `fdjd` (reset pos ก่อน) → ได้ `hell` กลับ ✓
 
 ---
 
