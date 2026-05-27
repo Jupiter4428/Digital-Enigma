@@ -905,17 +905,3 @@ mod26_sub:  (1,1)→0   (20,1)→19  (0,1)→25
 plugboard:  A→V  V→A  H→Z  Z→H  E→E (pass)
 reflector:  W(22)→V(21)  V(21)→W(22)  A(0)→Y(24)
 ```
-
-## Checklist ก่อน Simulate
-
-- [ ] ทุก Pin ที่รับ/ส่ง char/pos: **width = 6**
-- [ ] Bit Extender ที่รับ char_in/pos: **in_width = 6**
-- [ ] Bit Extender ที่รับ sub จาก ROM (5-bit): **in_width = 5** (ไม่เปลี่ยน)
-- [ ] ROM plugboard/reflector: **addrWidth=6, dataWidth=6**
-- [ ] ROM rotor_fw/bw: **addrWidth=5, dataWidth=5** (ไม่เปลี่ยน)
-- [ ] Counter ใน stepping: width=5, max=25 (ไม่เปลี่ยน)
-- [ ] Splitter ใน rotor (ก่อน ROM): **incoming=6, fanout0=5-bit** (ไม่เปลี่ยน)
-- [ ] Splitter ใน mod26_add (หลัง MUX): **bit5=0** (ทุก bit → fanout0 = 6-bit)
-- [ ] Register out_reg: **width = 6**
-- [ ] char_out Probe/Pin: Radix = **Unsigned** หรือ **Hex** เพื่ออ่านค่า 0–25 ได้ถูกต้อง
-- [ ] Probe/output pin: Radix = **Unsigned** หรือ **Hex**
